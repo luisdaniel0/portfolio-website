@@ -1,30 +1,55 @@
-import React from 'react'
+import React, { Profiler } from 'react'
 import benefi from "../assets/portfolio/benefii.png";
 import quiz from "../assets/portfolio/quiz.png";
 import valorant from "../assets/portfolio/valorant.png";
 
 const Portfolio = () => {
 
-  const portfolios = [
-    {
-      id: 1,
-      src: benefi,
-      demo: "https://splendorous-cucurucho-94443d.netlify.app/",
-      code: "https://github.com/mateolopcas/beneFI-front-end"
-    },
-    {
-      id: 2,
-      src: valorant,
-      demo: "https://valorantuilayout.surge.sh/",
-      code: "https://github.com/luisdaniel0/react-ui-slider/tree/main/react-slider-app"
-    },
-    {
-      id: 3,
-      src: quiz,
-      demo: "https://artist-trivia.netlify.app/",
-      code: "https://github.com/luisdaniel0/trivia-game"
-    },
-  ]
+  // const portfolios = [
+  //   {
+  //     id: 1,
+  //     src: benefi,
+  //     demo: "https://splendorous-cucurucho-94443d.netlify.app/",
+  //     code: "https://github.com/mateolopcas/beneFI-front-end"
+  //   },
+  //   {
+  //     id: 2,
+  //     src: valorant,
+  //     demo: "https://valorantuilayout.surge.sh/",
+  //     code: "https://github.com/luisdaniel0/react-ui-slider/tree/main/react-slider-app"
+  //   },
+  //   {
+  //     id: 3,
+  //     src: quiz,
+  //     demo: "https://artist-trivia.netlify.app/",
+  //     code: "https://github.com/luisdaniel0/trivia-game"
+  //   },
+  // ]
+
+  const handleClickBenefi1 = (e) => {
+    window.open("https://splendorous-cucurucho-94443d.netlify.app/", "_blank");
+
+  }
+
+  const handleClickBenefi2 = (e) => {
+    window.open("https://github.com/mateolopcas/beneFI-front-end", "_blank")
+  }
+
+  const handleClickVal1 = (e) => {
+    window.open("https://valorantuilayout.surge.sh/", "_blank")
+  }
+
+  const handleClickVal2 = (e) => {
+    window.open("https://github.com/luisdaniel0/react-ui-slider/tree/main/react-slider-app", "_blank")
+  }
+
+  const handleClickQuiz1 = (e) => {
+    window.open("https://artist-trivia.netlify.app/", "_blank")
+  }
+
+  const handleClickQuiz2 = (e) => {
+    window.open("https://github.com/luisdaniel0/trivia-game", "_blank")
+  }
 
 
   return (
@@ -39,20 +64,36 @@ const Portfolio = () => {
 
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          
-          {
-            portfolios.map(({ id, src,code}) => (
-              
-              <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-                <img src={src} alt="benefi" className="rounded-md duration-200 hover:scale-105" />
-                <div className="flex items-center justify-center">
-                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-                  <button onClick={code} className="w-1/2 px-6 py-3 m-3 duration-200 hover:scale-105">Code</button>
-                </div>
-              </div>
-              ))}
 
-            
+
+
+
+          <div className="shadow-md shadow-gray-600 rounded-lg">
+            <img src={benefi} alt="benefi" className="rounded-md duration-200 hover:scale-105" />
+            <div className="flex items-center justify-center">
+              <button onClick={handleClickBenefi1} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
+              <button onClick={handleClickBenefi2} className="w-1/2 px-6 py-3 m-3 duration-200 hover:scale-105">Code</button>
+            </div>
+          </div>
+
+          <div className="shadow-md shadow-gray-600 rounded-lg">
+            <img src={valorant} alt="benefi" className="rounded-md duration-200 hover:scale-105" />
+            <div className="flex items-center justify-center">
+              <button onClick={handleClickVal1} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
+              <button onClick={handleClickVal2} className="w-1/2 px-6 py-3 m-3 duration-200 hover:scale-105">Code</button>
+            </div>
+          </div>
+
+          <div className="shadow-md shadow-gray-600 rounded-lg">
+            <img src={quiz} alt="benefi" className="rounded-md duration-200 hover:scale-105" />
+            <div className="flex items-center justify-center">
+              <button onClick={handleClickQuiz1} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
+              <button onClick={handleClickQuiz2} className="w-1/2 px-6 py-3 m-3 duration-200 hover:scale-105">Code</button>
+            </div>
+          </div>
+
+
+
         </div>
 
       </div>
