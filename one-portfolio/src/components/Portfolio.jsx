@@ -1,4 +1,4 @@
-import React, { Profiler } from 'react'
+import React from 'react'
 import benefi from "../assets/portfolio/benefi5.png";
 import quiz from "../assets/portfolio/quiz.png";
 import valorant from "../assets/portfolio/jett.jpeg";
