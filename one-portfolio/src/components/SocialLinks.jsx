@@ -33,17 +33,7 @@ const SocialLinks = () => {
       ),
       href: "mailto:luisanchezdh@gmail.com",
     },
-    {
-      id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "/luis-sanchez-resume.pdf",
-      style: "rounded-br-md",
-      download: true,
-    },
+    
   ];
 
   return (
