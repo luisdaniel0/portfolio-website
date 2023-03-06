@@ -16,7 +16,7 @@ const About = () => {
         <p className="text-xl mt20">
           I recently finished General Assembly's Software Engineering Immersive program where I built a foundation in my technical skills as a developer and further improved my collaborative work as well as my code efficiency!
 
-          Outside of work I love watching sports and listening to music. My main focus being basketball and Hip-Hop. Feel free to connect with me about any of the above, including some NFTs/Cryptocurrency that I think are still worth holding today. I can give detailed insight about a lot of NFT projects out today!
+          Outside of work I love watching sports and listening to music. My main focus being basketball and Hip-Hop. Feel free to connect with me about any of the above. 
         </p>
       </div>
     </div>

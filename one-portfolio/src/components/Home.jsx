@@ -11,7 +11,7 @@ const Home = () => {
           <h2 className="text-4xl sm:text-7xl font-bold text-white">I'm a Full Stack Developer </h2>
           <p className="text-gray-500 py-4 max-w-md">
             I have hands-on experience building and designing applications from the ground up.
-            Currently, I love to work on web applications using technologies like React, Tailwind, Next JS, and Python.
+            Currently, I love to work on web applications using technologies like React, Tailwind, and Python.
           </p>
           <div>
             <Link to="portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor pointer">

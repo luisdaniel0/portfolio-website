@@ -5,26 +5,7 @@ import valorant from "../assets/portfolio/jett.jpeg";
 
 const Portfolio = () => {
 
-  // const portfolios = [
-  //   {
-  //     id: 1,
-  //     src: benefi,
-  //     demo: "https://splendorous-cucurucho-94443d.netlify.app/",
-  //     code: "https://github.com/mateolopcas/beneFI-front-end"
-  //   },
-  //   {
-  //     id: 2,
-  //     src: valorant,
-  //     demo: "https://valorantuilayout.surge.sh/",
-  //     code: "https://github.com/luisdaniel0/react-ui-slider/tree/main/react-slider-app"
-  //   },
-  //   {
-  //     id: 3,
-  //     src: quiz,
-  //     demo: "https://artist-trivia.netlify.app/",
-  //     code: "https://github.com/luisdaniel0/trivia-game"
-  //   },
-  // ]
+  
 
   const handleClickBenefi1 = (e) => {
     window.open("https://splendorous-cucurucho-94443d.netlify.app/", "_blank");

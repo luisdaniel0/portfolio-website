@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/luisdaniel0/portfolio-website/issues"
   },
-  "homepage": "https://github.com/luisdaniel0/portfolio-website#readme"
+  "homepage": "https://github.com/luisdaniel0/portfolio-website#readme",
+  "dependencies": {
+    "i": "^0.3.7"
+  }
 }
